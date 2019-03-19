@@ -1,12 +1,17 @@
 package com.reflection;
 
-public class WithFinalField {
+import jdk.jfr.Name;
+
+import java.lang.annotation.Documented;
+
+public class ClassWithFinalField {
 
     final String finalField;
 
-    public WithFinalField(){
+    public ClassWithFinalField(){
         finalField = "final";
     }
+
 
     @Deprecated
     private void getUserInformation() {
